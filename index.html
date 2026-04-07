@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hidden Logic — CTF</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="grid-bg"></div>
+
+  <main class="card" role="main">
+
+    <header class="header">
+      <div class="badge">&#x25CF;&nbsp; CTF Challenge</div>
+      <h1>Hidden Logic</h1>
+      <p class="subtitle">// Analyse. Decode. Override. Conquer.</p>
+    </header>
+
+    <div class="divider"></div>
+
+    <div class="form-group">
+      <label for="code-input" class="label-cursor">Enter access code</label>
+      <input
+        type="text"
+        id="code-input"
+        placeholder="_ _ _ _ _ _ _ _ _ _ _"
+        autocomplete="off"
+        spellcheck="false"
+      />
+    </div>
+
+    <button id="submit-btn" type="button">
+      <span>Authenticate</span>
+    </button>
+
+    <div id="result" role="alert" aria-live="polite"></div>
+
+    <p class="footer-hint">
+      Something hidden in <span>app.js</span> &mdash; look closer.
+    </p>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
